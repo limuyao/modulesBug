@@ -1,0 +1,38 @@
+{
+  "name": "modulesBug",
+  "version": "1.0.0",
+  "description": "modulesBug layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --config config/webpack.config.js --mode=development",
+    "build-pro": "webpack --config config/webpack.config.js --mode=production"
+  },
+  "author": "limuyao",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "browser-sync": "^2.26.5",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "rete": "^1.4.2",
+    "rete-area-plugin": "^0.2.1",
+    "rete-comment-plugin": "^0.6.1",
+    "rete-connection-plugin": "^0.8.3",
+    "rete-context-menu-plugin": "^0.5.2",
+    "rete-module-plugin": "^0.3.0",
+    "rete-vue-render-plugin": "^0.5.0",
+    "vue": "^2.6.10"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modules Bug</title>
+	<style type="text/css">		
+		html,
+		body {
+		    margin: 0;
+		    height: 100%;
+		}
+		#rete {
+		    height: 100% !important
+		}
+
+		#modules {
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    z-index: 5;
+		}
+
+		.module-list {
+		    padding: 5px;
+		    cursor: pointer;
+		}
+
+		.module:hover {
+		    color: #a167e7;
+		}
+
+		.node .socket.number {
+		    background: #96b38a
+		}
+
+		.node .socket.float {
+		    background: red;
+		} 
+	</style>
+</head>
+<body>
+	<h1 align="right">Modules Bug</h1>
+	<div id="modules">
+        <div class="module-list" v-for="(item, index) in modules" @click="openModule(index)">
+            {{index}}
+        </div>
+        <button @click="addModule()">
+            add
+        </button>
+        
+    </div>
+	<div id="rete"></div>
+	<script src="./data.js"></script>
+	<script src="./dist/main.js"></script>
+</body>
+</html>
